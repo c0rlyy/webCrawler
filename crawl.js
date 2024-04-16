@@ -40,7 +40,7 @@ async function crawlPage(rootUrl, currentUrl, pages) {
     }
     //let normalizedRoot = normalizeURL(rootUrl);
     let normalizedCurrent = normalizeURL(currentUrl);
-    if (pages.hasOwnProperty(`${normalizedCurrent}`)) {
+    if (pages.hasOwnProperty(normalizedCurrent)) {
       pages[normalizedCurrent]++;
       return pages;
     }
